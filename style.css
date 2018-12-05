@@ -1,0 +1,134 @@
+body {
+    background-color: #E3E3E3;
+    color: #1B1D1C;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    line-height: 1.5em;
+}
+
+.container {
+    background-color: white;
+    min-height: 400px;
+    max-width: 960px;
+    margin: 2em auto;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 gray, 0 6px 20px 0 gray;
+    
+}
+
+nav, footer {
+    background-color: #dadada;
+
+}
+
+nav,footer, main, header{
+    padding: 1em ;
+}
+
+
+.intro_img{
+    width:100%;
+
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color: #444;
+
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #CE7082;
+}
+
+nav ul, footer ul{
+    list-style-position: inside;
+    margin: 0px auto;
+    padding: 0px;
+}
+
+nav li, footer li{
+    display: inline-block;
+    padding: 0px;
+    margin-right: 20px;
+}
+
+.logo {
+   width: 30%;
+   height: auto;
+}
+
+
+h1, h2, h3,
+h4, h5, h6 {
+    margin: 0 0;
+    line-height: 1.2em;
+}
+
+main h1, main h2, main h3,
+main h4, main h5, main h6{
+    text-transform: uppercase;
+    font-weight: normal;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    letter-spacing: 5px;
+    
+}
+
+main header h1, main header h2, main header h3,
+main header h4, main header h5, main header h6 {
+    margin-top: 1em;
+    margin-top: 0.5em;
+}
+
+nav,footer {
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.corrent_link{
+    font-weight: bolder;
+}
+
+footer{
+    text-align: right;
+    font-size: 0.75em;
+
+}
+
+#beschreibung{
+    max-width: 70%;
+    float: left;
+    margin-right: 3em;
+    margin-bottom: 3em;
+}
+
+#daten {
+    max-width: 30%;
+    float: left;
+}
+
+#daten_table{
+    overflow-x:auto;
+}
+
+#daten_table th{
+    padding: 5px 5px;
+    text-align:left;
+}
+
+#daten_table td{
+        padding: 5px 5px;
+
+    text-align: right;
+}
+
+#daten_table tr:nth-child(odd){
+    background-color: #d4d4d4;
+}
+
+#uber{
+    clear: both;
+}

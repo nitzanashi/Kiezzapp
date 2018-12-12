@@ -82,6 +82,12 @@ main header h4, main header h5, main header h6 {
     margin-top: 0.5em;
 }
 
+
+main header > h1, h2,h3,h4,h5,h6 {
+    margin-top: 1em;
+    margin-top: 0.5em;
+}
+
 nav,footer {
     letter-spacing: 4px;
     text-transform: uppercase;
@@ -115,15 +121,17 @@ footer{
 }
 
 #daten_table th{
-    padding: 5px 5px;
+    padding: 0.25em 0.5em;
     text-align:left;
 }
 
 #daten_table td{
-        padding: 5px 5px;
+        padding: 0.25em 0.5em;
+        padding-top: 2.5px;
 
     text-align: right;
 }
+
 
 #daten_table tr:nth-child(odd){
     background-color: #d4d4d4;
@@ -131,4 +139,85 @@ footer{
 
 #uber{
     clear: both;
+}
+
+.res_item{
+        width: 288px;
+        margin: 5px 5px;
+        /*padding: 1em 1em;*/
+}
+
+.res_item > figure{
+    width:288px; /*container-width*/
+    overflow:hidden; /*hide bounds of image */
+    margin:0;   /*reset margin of figure tag*/
+    height: 200px;
+    position: relative;
+}
+
+
+.res_item > figure img{
+    display:block;
+    position: absolute;
+    margin: auto; 
+    min-height: 100%;
+    min-width: 100%;
+    left: -96%;
+    right: -100%;
+    top: -100%;
+    bottom: -100%;
+}
+
+.res_item >figure ::before{
+  display: block;
+  position: absolute;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0 , #000 100%);
+  height: 150px;
+  width: 100%;
+  content: '';
+  left: 0px;
+}
+
+
+.restaurants_container{
+    
+    display: flex; /* or inline-flex */
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+
+
+.res_type{
+    position: absolute;
+    font-size: 0.7em;
+    font-weight: bold;
+    color: white;
+    bottom: 45px;
+    background-image: linear-gradient(to right, rgba(172,0,85,0.7), rgba(172,0,85,0.8), rgba(172,0,85,0));
+    width: 100%;
+    padding: 0px 10px;
+    animation: fadein 2s;
+}
+
+.res_title{
+    position: absolute;
+    font-size: medium;
+    color: white;
+    bottom: 15px;
+    background-image: linear-gradient(to right, rgba(150,150,150,0.7), rgba(150,150,150, 0));
+    padding: 0px 10px;
+    width: 100%;
+    animation: fadein 2s;
+    
+}
+
+@keyframes fadein{
+        from { opacity: 0; }
+        to   { opacity: 1; }
+}
+
+.res_item > p{
+    margin: 0px 0px;
+
 }

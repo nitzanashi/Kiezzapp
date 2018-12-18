@@ -3,61 +3,94 @@ body {
     color: #1B1D1C;
     font-family: "Trebuchet MS", Helvetica, sans-serif;
     line-height: 1.5em;
+    min-height:100vh;
 }
 
-.container {
-    background-color: white;
-    min-height: 400px;
-    max-width: 960px;
-    margin: 2em auto;
-    display: block;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px 0 gray, 0 6px 20px 0 gray;
+@media screen and (min-width: 961px) {
+
+
+    .container {
+        background-color: white;
+        min-height: 400px;
+        max-width: 960px;
+        margin: 2em auto;
+        display: block;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px 0 gray, 0 6px 20px 0 gray;
+        
+    }
+    
+    .logo {
+       width: 30%;
+       height: auto;
+    }
+    
+        #menu-mobile{
+        display: none;
+    }
+    
+    header{
+        position: relative;
+    }
+    
+    #navi{
+        display: block !important;
+    }
+    
+    
+    nav,footer, main, header{
+        padding: 1em ;
+    }
+    
+    #navi,footer {
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        text-align: left;
+    }
+    
+    nav ul, footer ul{
+        list-style-position: inside;
+        margin: 0px auto;
+        padding: 0px;
+    }
+
+nav li, footer li{
+        display: inline-block;
+        padding: 0px;
+        margin-right: 20px;
+    }
+    
+    
+    nav, footer {
+        background-color: #dadada;
+    }
+
+
+    .intro_img{
+        width:100%;
+    
+    }
+
+    a:link, a:visited {
+        text-decoration: none;
+        color: #444;
+    
+    }
+
+    a:hover {
+        text-decoration: underline;
+        color: #CE7082;
+    }
     
 }
 
-nav, footer {
-    background-color: #dadada;
-
-}
-
-nav,footer, main, header{
-    padding: 1em ;
-}
 
 
-.intro_img{
-    width:100%;
 
-}
 
-a:link, a:visited {
-    text-decoration: none;
-    color: #444;
 
-}
 
-a:hover {
-    text-decoration: underline;
-    color: #CE7082;
-}
 
-nav ul, footer ul{
-    list-style-position: inside;
-    margin: 0px auto;
-    padding: 0px;
-}
-
-nav li, footer li{
-    display: inline-block;
-    padding: 0px;
-    margin-right: 20px;
-}
-
-.logo {
-   width: 30%;
-   height: auto;
-}
 
 
 h1, h2, h3,
@@ -88,11 +121,7 @@ main header > h1, h2,h3,h4,h5,h6 {
     margin-top: 0.5em;
 }
 
-nav,footer {
-    letter-spacing: 4px;
-    text-transform: uppercase;
-    text-align: left;
-}
+
 
 .corrent_link{
     font-weight: bolder;
@@ -221,3 +250,192 @@ footer{
     margin: 0px 0px;
 
 }
+
+
+@media screen and (max-width: 961px) {
+    
+    
+    body {
+        height: 100%;
+        width: 100vw;
+        margin: 0;
+    }
+    
+     .container {
+        background-color: white;
+        min-height: 400px;
+        padding: 0;
+        display: block;
+        position: absolute;
+        width: 100vw;
+    }
+
+    
+    header{
+        background-color: #dadada;
+        box-shadow: 0 4px 8px 0 gray, 0 6px 20px 0 gray;
+        /*height:15vh;*/
+        /*top:0;*/
+        /*position: relative;*/
+        width: 100%;
+        /*overflow:auto;*/
+        /*display: table;*/
+        display: flex;
+        justify-content: space-between;
+	}
+    
+    .logo {
+        position: relative;
+        /*padding: 1em;*/
+        width: 30vw;
+        height:auto;
+        /*display: inline-block;*/
+        /*vertical-align: top;*/
+        /*display: table-cell;*/
+        /*vertical-align: middle;*/
+        align-self: center;
+    }
+    
+    #menu-mobile{
+        padding: 0.2em;
+        font-weight: bolder;
+        font-size: 5vw;
+        align-self: center;
+        transition: 0.5s;
+
+    }
+    
+    #navi{
+        background-color: rgba(218,218,218);
+        background-color: rgba(218,218,218, 0.9);
+        height: 0%;
+        width: 100%;
+        z-index: 1;
+        overflow-x: hidden;
+        position: absolute;
+        transition: 0.5s;
+        /*top: 0vh;*/
+    }
+    
+    #navi,footer {
+        letter-spacing: 4px;
+        text-transform: uppercase;
+    }
+    
+    #navi ul{
+        position: relative; /* Set the navbar to fixed position */
+        text-align: center;
+        width: 100%;
+        list-style-position: inside;
+        padding: 0em;
+    }
+
+    #navi li{
+        display: block;
+        font-size: 8vw;
+        line-height: 15vw;
+        -webkit-box-shadow: 0px 11px 16px -4px rgba(0,0,0,0.30);
+        -moz-box-shadow: 0px 11px 16px -4px rgba(0,0,0,0.30);
+        box-shadow: 0px 11px 16px -4px rgba(0,0,0,0.30);
+        border-bottom: 2px solid rgba(0, 0, 0, .2);
+        
+
+    }
+    
+    #navi li > a{
+        display: block;
+        width: 100%px;
+    }
+    
+    a:link, a:visited {
+        text-decoration: none;
+        color: #444;
+    
+    }
+    
+    a:hover{
+        color: #CE7082;
+    }
+
+    li:hover {
+        background-color: rgba(0,0,0, 0.20);
+    }
+    
+    
+    
+    main{
+        /*width: 100%;*/
+        height: 100%;
+        padding: 1em;
+        margin: 0em auto;
+    }
+    
+    
+    .intro_img{
+        width: 100vw;
+        margin: -1em;
+    
+    }
+    
+    footer {
+        background-color: #dadada;
+    }
+
+
+
+    
+
+
+ 
+    
+}
+
+
+@media screen and (max-width: 250px) {
+    
+    .responsive:before{
+        content: attr(data-alt);
+        display: inline-block;
+        max-width: 60%;
+        font-size: 7vw;
+        padding: 5vw;
+        margin: 0em;
+    }
+    
+    
+    .logo {
+        display: none;
+    }
+    
+    header{
+        background-color: #dadada;
+     /*   -webkit-box-shadow: 0 8px 6px -6px black;*/
+     /*   -moz-box-shadow: 0 8px 6px -6px black;*/
+	    /*box-shadow: 0 8px 6px -6px black;*/
+	   box-shadow: 0 4px 8px 0 gray, 0 6px 20px 0 gray;
+	   text-align: center;
+	   height: 18vw;
+    }
+    
+    #menu-mobile{
+        display: inline;
+        font-weight: bolder;
+        padding: 5vw;
+        font-size: 7vw;
+        max-width: 40%;
+    }
+    
+    
+
+    
+
+    
+    
+
+}
+
+
+
+
+
+

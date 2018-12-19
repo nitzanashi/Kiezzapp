@@ -4,7 +4,6 @@
 		<meta charset="utf-8">
 		<title>PBN - Prenzlauer Berg Berlin - Restaurants</title>
 		<link rel="stylesheet" href="style.css">
-		
 		<link rel="apple-touch-icon" sizes="57x57" href="icon.ico/apple-icon-57x57.png">
 		<link rel="apple-touch-icon" sizes="60x60" href="icon.ico/apple-icon-60x60.png">
 		<link rel="apple-touch-icon" sizes="72x72" href="icon.ico/apple-icon-72x72.png">
@@ -22,83 +21,87 @@
 		<meta name="msapplication-TileColor" content="#ffffff">
 		<meta name="msapplication-TileImage" content="icon.ico/ms-icon-144x144.png">
 		<meta name="theme-color" content="#ffffff">
+		
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="text/javascript" src="functions.js"></script>
 	</head>
 	<body>
-				<div class="container">
-
-		<header>
-			<img class="logo" src="images/pbn_logo.png" alt="pbn logo"></img>
-		</header>
+		<div class="container">
+			<header >
+				<span class='responsive' data-alt='PBN - APP'>
+					<a href="index.html"><img class="logo" src="images/pbn_logo.png" alt="pbn logo"></img></a>
+				</span>
+				<span id="menu-mobile" style="cursor:pointer" onclick="clickMe()" >&#9776; MENU</span>
 	
-		<nav>
-			<ul>
-				<li><a href="index.html">Intro</a></li>
-				<li class="corrent_link">Restaurants</li>
-			</ul>
-		</nav>
-		<main>
-			<h2>Restaurants</h2>
-			<div class="restaurants_container">
-				
-				<div class="res_item">
-					<figure>
-						<img src="images/thebird.jpeg" width="300">
-						<div class="res_type">Hamburger & Steakhouse Restaurant</div>
-						<div class="res_title">The Bird Prenzlauer Berg</div>
-					</figure>
-					<p> Am Falkpl. 5, 10437 Berlin<br>
-						<a href="https://thebirdinberlin.com">https://thebirdinberlin.com</a><br>
-						+49 30 51053283
-					</p>
+			</header>
+		
+			<nav id="navi">
+				<ul id="navi_ul">
+					<li><a href="index.html">Intro</a></li>
+					<li class="corrent_link">Restaurants</li>
+				</ul>
+			</nav>
+			<main>
+				<h2>Restaurants</h2>
+				<div class="restaurants_container">
+					
+					<div class="res_item">
+						<figure>
+							<img src="images/thebird.jpeg" width="300">
+							<div class="res_type">Hamburger & Steakhouse Restaurant</div>
+							<div class="res_title">The Bird Prenzlauer Berg</div>
+						</figure>
+						<p> Am Falkpl. 5, 10437 Berlin<br>
+							<a href="https://thebirdinberlin.com">https://thebirdinberlin.com</a><br>
+							+49 30 51053283
+						</p>
+					</div>
+					
+					<div class="res_item">
+						<figure>
+							<img src="images/birdbbq.jpg" width="300">
+							<div class="res_type">BBQ</div>
+							<div class="res_title">The Bird Barbecue</div>
+						</figure>
+						<p>
+							Oderberger Str. 61, 10435 Berlin<br>
+							<a href="thebirdbbq.com">thebirdbbq.com</a><br>
+							+49 30 47496600
+						</p>
+					</div>
+					
+					<div class="res_item">
+						<figure>
+							<img src="images/pizza.jpg" width="300">
+							<div class="res_type">Pizza</div>
+							<div class="res_title">Aceto Lokanta</div>
+						</figure>
+						<p>
+							Wichertstraße 4, 10439 Berlin<br>
+							<a href="https://acetolokanta.de">https://acetolokanta.de</a><br>
+							+49 30 75524100
+						</p>
+					</div>
+					
+					<div class="res_item">
+						<figure>
+							<img src="images/doner.jpg" width="300">
+							<div class="res_type">Döner</div>
+							<div class="res_title">Bilakis</div>
+						</figure>
+						<p>
+							Wichertstraße 73, 10439 Berlin<br>
+							<a href="https://bilakis.de">https://bilakis.de</a><br>
+							+49 30 41198206
+						</p>
+					</div>
+					
 				</div>
-				
-				<div class="res_item">
-					<figure>
-						<img src="images/birdbbq.jpg" width="300">
-						<div class="res_type">BBQ</div>
-						<div class="res_title">The Bird Barbecue</div>
-					</figure>
-					<p>
-						Oderberger Str. 61, 10435 Berlin<br>
-						<a href="thebirdbbq.com">thebirdbbq.com</a><br>
-						+49 30 47496600
-					</p>
-				</div>
-				
-				<div class="res_item">
-					<figure>
-						<img src="images/pizza.jpg" width="300">
-						<div class="res_type">Pizza</div>
-						<div class="res_title">Aceto Lokanta</div>
-					</figure>
-					<p>
-						Wichertstraße 4, 10439 Berlin<br>
-						<a href="https://acetolokanta.de">https://acetolokanta.de</a><br>
-						+49 30 75524100
-					</p>
-				</div>
-				
-				<div class="res_item">
-					<figure>
-						<img src="images/doner.jpg" width="300">
-						<div class="res_type">Döner</div>
-						<div class="res_title">Bilakis</div>
-					</figure>
-					<p>
-						Wichertstraße 73, 10439 Berlin<br>
-						<a href="https://bilakis.de">https://bilakis.de</a><br>
-						+49 30 41198206
-					</p>
-				</div>
-				
-			</div>
-		</main>
-		<br>
-		<footer>
-			<li><a href="kontakt.html">KONTAKT UND IMPRESUM</a></li>
-		</footer>
-				</div>
+			</main>
+			<br>
+			<footer>
+				<a href="kontakt.html">KONTAKT UND IMPRESUM</a>
+			</footer>
+		</div>
 	</body>
-
 </html>

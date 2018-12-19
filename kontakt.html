@@ -4,7 +4,6 @@
 		<meta charset="utf-8">
 		<title>PBN - Prenzlauer Berg Berlin - Kontakt</title>
 		<link rel="stylesheet" href="style.css">
-		
 		<link rel="apple-touch-icon" sizes="57x57" href="icon.ico/apple-icon-57x57.png">
 		<link rel="apple-touch-icon" sizes="60x60" href="icon.ico/apple-icon-60x60.png">
 		<link rel="apple-touch-icon" sizes="72x72" href="icon.ico/apple-icon-72x72.png">
@@ -22,126 +21,132 @@
 		<meta name="msapplication-TileColor" content="#ffffff">
 		<meta name="msapplication-TileImage" content="icon.ico/ms-icon-144x144.png">
 		<meta name="theme-color" content="#ffffff">
+		
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="text/javascript" src="functions.js"></script>
 	</head>
 	<body>
-				<div class="container">
+		<div class="container">
 
-		<header>
-			<img class="logo" src="images/pbn_logo.png" alt="pbn logo"></img>
-		</header>
+			<header >
+				<span class='responsive' data-alt='PBN - APP'>
+					<a href="index.html"><img class="logo" src="images/pbn_logo.png" alt="pbn logo"></img></a>
+				</span>
+				<span id="menu-mobile" style="cursor:pointer" onclick="clickMe()" >&#9776; MENU</span>
 	
-		<nav>
-			<ul>
-				<li><a href="index.html">Intro</a></li>
-				<li><a href="restaurants.html">Restaurants</a></li>
-			</ul>
-		</nav>
-		<main>
-			<h2>Impressum und Kontakt</h2>
-			<p><strong>Impressum</strong></p>
+			</header>
 		
-			<p>Max Meister</p>
-			<p>Schönhauser Allee 80, 10439 Berlin</p>
-			<p>Telefon: +49 30 123456, Fax: +49 30 123456</p>
-			<p>Email: kontakt@max-meister.de</p>
-			<p>Internet: www.max-meister.de</p>
-			<p>Wenn vorhanden: Umsatzsteueridentifikationsnummer gemäß § 27a Umsatzsteuergesetz: DE 63527364839</p>
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1600.6430988431644!2d13.414056072464811!3d52.548990723473736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa5239c459b2d413f!2sSch%C3%B6nhauser+Allee+Arcaden!5e0!3m2!1sen!2sde!4v1542627981887" frameborder="0" style="border:0" allowfullscreen></iframe>
-
-			<p><strong>Kontakt</strong></p>
-			<form id="contact_form">
-				Essential Information is marked with an asterisk (*)<br><br>
-				<table>
-					<tr>
-						<td>
-							<label for="name">My Name is: *</label>
-						</td>
-						<td>
-							<input type="text" name="name" id="name" required />
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<label for="gender">I identify my gender as: *</label>
-						</td>
-						<td>
-							<input type="radio" name="gender" id="gender" value="other" checked required />Other
-							<input type="radio" name="gender" id="gender" value="female" required />Female
-							<input type="radio" name="gender" id="gender" value="male" required />Male
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<label for="email">My email address is: *</label>
-						</td>
-						<td>
-							<input type="email" name="email" id="email" required />
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<label for="neighborhoods">Im living in:</label>
-						</td>
-						<td>
-							<input type="text" name="neighborhoods" id="neighborhoods" list="neighborhood" />
-							<datalist id="neighborhood">
-								<select id="neighborhood">
-									<option value="Mitte">Mitte</option>
-									<option value="Friedrichshain-Kreuzberg">Friedrichshain-Kreuzberg</option>
-									<option value="Pankow">Pankow</option>
-									<option value="Charlottenburg-Wilmersdorf">Charlottenburg-Wilmersdorf</option>
-									<option value="Spandau">Spandau</option>
-									<option value="Steglitz-Zehlendorf">Steglitz-Zehlendorf</option>
-									<option value="Tempelhof-Schöneberg">Tempelhof-Schöneberg</option>
-									<option value="Neukölln">Neukölln</option>
-									<option value="Treptow-Köpenick">Treptow-Köpenick</option>
-									<option value="Marzahn-Hellersdorf">Marzahn-Hellersdorf</option>
-									<option value="Lichtenberg">Lichtenberg</option>
-									<option value="Reinickendorf">Reinickendorf</option>
-								</select>
-							</datalist>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<label for="phone">My phone Number is:</label>
-						</td>
-						<td>
-							<input type="text" name="phone" id="phone"/>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<label for="title">Title: *</label>
-						</td>
-						<td>
-							<input type="text" name="title" id="title" Size="50" required/>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<label for="message">My Message: *</label>
-						</td>
-						<td>
-							<textarea name ="message" id="message" rows="6" cols="48" form="contact_form" required>Enter text here...</textarea>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<button type="reset" value="Reset">Reset</button>
-							<input type="submit" value="Submit"/>
-						</td>
-
-					</tr>
-					</table>
-			</form>
-		</main>
-		<br>
-		<footer>
-			<!--<li>KONTAKT UND IMPRESUM</li>-->
-		</footer>
-				</div>
+			<nav id="navi">
+				<ul id="navi_ul">
+					<li><a href="index.html">Intro</a></li>
+					<li><a href="restaurants.html">Restaurants</a></li>
+				</ul>
+			</nav>
+			<main>
+				<h2>Impressum und Kontakt</h2>
+				<p><strong>Impressum</strong></p>
+			
+				<p>Max Meister</p>
+				<p>Schönhauser Allee 80, 10439 Berlin</p>
+				<p>Telefon: +49 30 123456, Fax: +49 30 123456</p>
+				<p>Email: kontakt@max-meister.de</p>
+				<p>Internet: www.max-meister.de</p>
+				<p>Wenn vorhanden: Umsatzsteueridentifikationsnummer gemäß § 27a Umsatzsteuergesetz: DE 63527364839</p>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1600.6430988431644!2d13.414056072464811!3d52.548990723473736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa5239c459b2d413f!2sSch%C3%B6nhauser+Allee+Arcaden!5e0!3m2!1sen!2sde!4v1542627981887" frameborder="0" style="border:0" allowfullscreen></iframe>
+	
+				<p><strong>Kontakt</strong></p>
+				<form id="contact_form">
+					Essential Information is marked with an asterisk (*)<br><br>
+					<table>
+						<tr>
+							<td>
+								<label for="name">My Name is: *</label>
+							</td>
+							<td>
+								<input type="text" name="name" id="name" required />
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label for="gender">I identify my gender as: *</label>
+							</td>
+							<td>
+								<input type="radio" name="gender" id="gender" value="other" checked required />Other
+								<input type="radio" name="gender" id="gender" value="female" required />Female
+								<input type="radio" name="gender" id="gender" value="male" required />Male
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label for="email">My email address is: *</label>
+							</td>
+							<td>
+								<input type="email" name="email" id="email" required />
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label for="neighborhoods">Im living in:</label>
+							</td>
+							<td>
+								<input type="text" name="neighborhoods" id="neighborhoods" list="neighborhood" />
+								<datalist id="neighborhood">
+									<select id="neighborhood">
+										<option value="Mitte">Mitte</option>
+										<option value="Friedrichshain-Kreuzberg">Friedrichshain-Kreuzberg</option>
+										<option value="Pankow">Pankow</option>
+										<option value="Charlottenburg-Wilmersdorf">Charlottenburg-Wilmersdorf</option>
+										<option value="Spandau">Spandau</option>
+										<option value="Steglitz-Zehlendorf">Steglitz-Zehlendorf</option>
+										<option value="Tempelhof-Schöneberg">Tempelhof-Schöneberg</option>
+										<option value="Neukölln">Neukölln</option>
+										<option value="Treptow-Köpenick">Treptow-Köpenick</option>
+										<option value="Marzahn-Hellersdorf">Marzahn-Hellersdorf</option>
+										<option value="Lichtenberg">Lichtenberg</option>
+										<option value="Reinickendorf">Reinickendorf</option>
+									</select>
+								</datalist>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label for="phone">My phone Number is:</label>
+							</td>
+							<td>
+								<input type="text" name="phone" id="phone"/>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label for="title">Title: *</label>
+							</td>
+							<td>
+								<input type="text" name="title" id="title" Size="50" required/>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label for="message">My Message: *</label>
+							</td>
+							<td>
+								<textarea name ="message" id="message" rows="6" cols="48" form="contact_form" required>Enter text here...</textarea>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<button type="reset" value="Reset">Reset</button>
+								<input type="submit" value="Submit"/>
+							</td>
+	
+						</tr>
+						</table>
+				</form>
+			</main>
+			<br>
+			<footer>
+				<!--<li>KONTAKT UND IMPRESUM</li>-->
+			</footer>
+		</div>
 	</body>
 
 </html>
